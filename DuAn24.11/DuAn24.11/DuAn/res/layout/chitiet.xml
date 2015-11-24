@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:gravity="center"
+        android:text="Tìm Theo Ngày"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_batdau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Từ Ngày" />
+
+        <TextView
+            android:id="@+id/txt_ketthuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Đến Ngày" />
+
+        <Button
+            android:id="@+id/btn_find_ngay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find"
+            android:layout_marginLeft="40dp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:gravity="center"
+        android:text="Tìm THeo Độ Khó"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn Độ Khó: " />
+
+        <Spinner
+            android:id="@+id/sp_timkiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="#3E3D48"
+            />
+
+        <Button
+            android:id="@+id/btn_find_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:gravity="center"
+        android:text="Tìm Theo Tên"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/edt_timten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nhập Tên Công Việc" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_find_tieude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find" 
+            android:layout_marginLeft="17dp"/>
+    </TableRow>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:gravity="center"
+        android:text="Danh Sách Tìm Được"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <ListView 
+        android:id="@+id/lv_timkiem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#90EE90"
+        
+        ></ListView>
+
+</LinearLayout>
